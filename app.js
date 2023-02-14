@@ -36,10 +36,10 @@ passwordInput.addEventListener("focus", function () {
 });
 
 // INPUT VALUES
-let firstName = fnameInput.value;
-let lastName = lnameInput.value;
-let email = emailInput.value;
-let password = passwordInput.value;
+// let firstName = fnameInput.value;
+// let lastName = lnameInput.value;
+// let email = emailInput.value;
+// let password = passwordInput.value;
 
 // REGEX FOR EMAIL VALIDATION
 const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -49,24 +49,24 @@ function submitForm(e) {
     e.preventDefault();
     console.log("clicked");
     
-    console.log(firstName, lastName, email, password);
+    console.log(fnameInput.value,lnameInput.value, emailInput.value, passwordInput.value);
 
-    if (firstName === "") {
+    if (fnameInput.value === "") {
         firstNameErrorMessage.style.visibility = "visible";
         firstNameErrorIcon.style.visibility = "visible";
     }
-    if (lastName === "") {
+    if (lnameInput.value === "") {
         lastNameErrorMessage.style.visibility = "visible";
         lastNameErrorIcon.style.visibility = "visible";
     }
 
-    if (!email.match(validRegex)) {
+    if (!validRegex.test(emailInput.value)) {
         emailErrorMessage.style.visibility = "visible";
         emailErrorIcon.style.visibility = "visible";
-        setTimeout(() => email = "", 0.1);
+        setTimeout(() => emailInput.value = "", 1000);
     }
 
-    if (password === "") {
+    if (passwordInput.value === "") {
         passwordErrorMessage.style.visibility = "visible";
         passwordErrorIcon.style.visibility = "visible";
     }
