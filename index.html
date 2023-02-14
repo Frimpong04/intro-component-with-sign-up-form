@@ -24,12 +24,32 @@
             <p class="offer-paragraph"><span>Try it free 7 days </span>then $20/mo. thereafter</p>
             
             <form>
-                <input type="text" name="fname" placeholder="First Name"/>
-                <input type="text" name="lname" placeholder="Last Name"/>
-                <input type="email" name="fname" placeholder="Email Address"/>
-                <input type="password" name="fname" placeholder="Password"/>
+                <div class="input-item">
+                    <input type="text" name="fname" placeholder="First Name"/>
+                    <p class="fname-error-paragraph">First Name can not empty</p>
+                    <img src="./images/icon-error.svg" alt="" class="fname-error-icon " />
+                </div>
+                
+                <div class="input-item">
+                    <input type="text" name="lname" placeholder="Last Name"/>
+                    <p class="lname-error-paragraph">Last Name can not empty</p>
+                    <img src="./images/icon-error.svg" alt="" class="lname-error-icon"/>
+                </div>
+                
+                <div class="input-item">
+                    <input type="email" name="email" placeholder="Email Address"/>
+                    <p class="email-error-paragraph">This does not look like an email</p>
+                    <img src="./images/icon-error.svg" alt="" class="email-error-icon"/>
+                </div>
+                
+                <div class="input-item">
+                    <input type="password" name="password" placeholder="Password"/>
+                    <p class="password-error-paragraph">Password can not be empty</p>
+                    <img src="./images/icon-error.svg" alt="" class="password-error-icon"/>
+                </div>
+                
                 <button type="submit">CLAIM YOUR FREE TRIAL</button>
-                <p   class="terms-paragraph">By clicking the button you are agreeing to our<span>Terms and Services</span></p>
+                <p   class="terms-paragraph">By clicking the button you are agreeing to our <span>Terms and Services</span></p>
             </form>
 
         </div>
