@@ -29,18 +29,19 @@ body {
     align-items: center;
     background-image: url("images/bg-intro-mobile.png");
     background-color: var(--terms-of-service-span-color);
-    padding:1rem 0;
     height: 100vh; 
 }
 main {
-    width: 90%;
+    width: 85%;
+    /* max-width:1200px; */
     height: 90vh; 
-    /* margin:1rem 0rem; */
+    padding: 3rem;
 }
 
 h1 {
     font-size: 2.9rem;
     padding: 1rem 2rem;
+    margin-left:4rem;
     color: white;
     line-height:1.0;
 }
@@ -54,7 +55,7 @@ h1 {
 
 .offer-paragraph {
     background-color: var(--offer-bg);
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     border-radius: 1rem;
     margin-bottom: 2rem;
@@ -64,7 +65,7 @@ h1 {
 
 
 form {
-    padding: 2rem;
+    padding: 1rem;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0px 2px 6px var(--placeholder-color), 0px 3px 15px var(--placeholder-color);
@@ -127,11 +128,9 @@ button {
 /* DESKTOP STYLES */
 @media only screen and (min-width: 1440px) {
     body {
-        /* border: 1px solid blue; */
         width: 100vw;
         display: flex; 
         justify-content: center;
-        /* /* align-items: center; */
         height: 100vh;
         background-image: url("./images/bg-intro-desktop.png");
     }
@@ -144,20 +143,24 @@ button {
         height: 70vh;
         gap:2rem;
         /* margin: 4rem 0; */
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         /* border: 1px solid white; */
     }
     h1 {
         line-height:1.4;
-        font-size: 4rem;
+        font-size: 3.6rem;
+    }
+
+    .main-paragraph {
+        font-size: 1.8rem;
     }
     .heading-container {
         padding: 3rem;
         /* border:1px solid white; */
-        flex: 1 1 20rem;
+        flex: 1 1 18rem;
     }
 
     .offer-form-container {
-        flex: 1 1 20rem;
+        flex: 1 1 18rem;
     }
 }
